@@ -1,0 +1,62 @@
+<html>
+<head>
+<script type="text/javascript" >
+
+
+function aceptarLog(){
+//document.getElementById('nombre').innerHTML="W3Schools";
+document.getElementById('aceptar').style.visibility='hidden';
+
+document.getElementById('nombre').style.visibility='visible';
+document.getElementById('nombre').innerHTML="Nombre :";
+document.getElementById('apellidos').style.visibility='visible';
+document.getElementById('apellidos').innerHTML="Apellidos :";
+document.getElementById('txt_nombre').style.visibility='visible';
+document.getElementById('txt_apellidos').style.visibility='visible';
+document.getElementById('btn_aceptar2').style.visibility='visible'; 
+
+}
+
+function aceptarNom(){
+//document.getElementById('nombre').innerHTML="W3Schools";
+document.getElementById('btn_aceptar2').style.visibility='hidden';
+
+document.getElementById('provincia').style.visibility='visible';
+document.getElementById('provincia').innerHTML="Nombre :";
+document.getElementById('ciudad').style.visibility='visible';
+document.getElementById('ciudad').innerHTML="Apellidos :";
+document.getElementById('txt_provincia').style.visibility='visible';
+document.getElementById('txt_ciudad').style.visibility='visible';
+document.getElementById('btn_aceptar3').style.visibility='visible'; 
+
+}
+
+</script>
+
+</head>
+<body>
+
+Usuario : <br>
+<input type="text" id="usuario" name="usuario"> <br>
+<br> 
+Pass : <br>
+<input type="password" id="pass" name="pass"> <br>
+<br>
+<input type=submit name="aceptar" value="Aceptar" id="aceptar" onclick="aceptarLog()">
+
+<p id="nombre"> </p> 
+<input type="text" id="txt_nombre" style="visibility:hidden">
+<p id="apellidos"></p>
+<input type="text" id="txt_apellidos" style="visibility:hidden">
+<br> <br>
+<button style="visibility:hidden" id="btn_aceptar2" onclick="aceptarNom()" > Aceptar </button>
+
+<p id="provincia"> </p> 
+<input type="text" id="txt_provincia" style="visibility:hidden">
+<p id="ciudad"></p>
+<input type="text" id="txt_ciudad" style="visibility:hidden">
+<br> <br>
+<button style="visibility:hidden" id="btn_aceptar3" > Aceptar </button>
+
+</body>
+</html>
