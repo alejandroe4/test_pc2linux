@@ -1,0 +1,118 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="es-es">
+<head>
+
+  <script type="text/javascript">
+
+	window.onload=mostrarsubmenuini;
+
+	function mostrarsubmenuini() {
+
+		for (var i = 1; i<=10; i++) {
+			if (document.getElementById('smenu'+i)) {
+					document.getElementById('smenu'+i).style.display='none';}
+			}
+
+	}
+	
+	function mostrarsubmenu(id){
+	var d = document.getElementById(id);		
+	
+		if (d.style.display=='block'){		
+				mostrarsubmenuini();			
+		}else{		
+				mostrarsubmenuini();		
+				if (d) {d.style.display='block';}		
+		}
+	}
+
+  </script>
+  
+  <style type="text/css">
+
+		dl, dt, dd, ul, li {
+				margin: 0;
+				padding: 0;
+				list-style-type: none;
+				color: blue;
+		}
+		
+		#menu li a, #menu dt a {
+				color: #FF0033;
+				text-decoration: none;
+				display: block;
+				border: 0 none;
+				height: 100%;
+		}
+		
+
+		</style>
+
+</head>
+
+
+<body>
+
+<div id="contenido">
+
+ Mi men&uacute; <br><br>
+
+	<dl id="menu">
+
+  <dt onclick="javascript:mostrarsubmenu();"><a href="#">Men&uacute; 1</a></dt>
+
+  <dt onclick="javascript:mostrarsubmenu('smenu2');" >Men&uacute; 2</dt>
+
+  <dd id="smenu2">
+    <ul>
+
+      <li><a href="#">Submen&uacute; 2.1</a></li>
+
+      <li><a href="#">Submen&uacute; 2.2</a></li>
+
+      <li><a href="#">Submen&uacute; 2.3</a></li>
+      
+      <li><input type=button value="close" onclick="javascript:mostrarsubmenu('smenu2');"> </li>
+
+    </ul>
+
+  </dd>
+
+  <dt onclick="javascript:mostrarsubmenu('smenu3');">Men&uacute; 3</dt>
+
+  <dd id="smenu3">
+    <ul>
+
+      <li><a href="#">Submen&uacute; 3.1</a></li>
+
+      <li><a href="#">Submen&uacute; 3.2</a></li>
+
+      <li><a href="#">Submen&uacute; 3.3</a></li>
+      
+      <li><input type=button value="close" onclick="javascript:mostrarsubmenu('smenu3');"> </li>
+
+    </ul>
+
+  </dd>
+
+  <dt onclick="javascript:mostrarsubmenu('smenu4');" >Men&uacute; 4</dt>
+
+  <dd id="smenu4">
+    <ul>
+
+      <li><a href="#">Submen&uacute; 4.1</a></li>
+
+      <li><a href="#">Submen&uacute; 4.2</a></li>
+      
+      <li><input type=button value="close" onclick="javascript:mostrarsubmenu('smenu4');"> </li>
+
+    </ul>
+
+  </dd>
+
+</dl>
+
+
+</div>
+</body>
+</html>
