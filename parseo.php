@@ -1,6 +1,6 @@
 <?php
 	$fh = fopen("parsear.txt", "r");
-
+ 
 	//echo readfile("parsear.txt");	
 	//$data = fread($fh, filesize("parsear.txt"));
 	while ($data = fgets($fh) ){
