@@ -1,0 +1,47 @@
+<html>
+<head>
+
+<script>
+function cerrarse(){
+	window.close();
+}
+
+function aceptarLog(f){
+	//window.opener.location.reload();
+	//window.opener.getElementById('login').style.visibility='visible';
+
+	if ((f.usuario.value != "") && (f.pass.value != "")) {
+	
+		mainForm=window.opener.document.forms[0];
+ 		window.opener.document.forms[0].usuario.value=f.usuario.value;
+ 		window.opener.document.getElementById('pass').value=f.pass.value;
+ 		window.opener.document.forms[0].submit();	
+	
+			window.close();
+ }else{
+ 		alert("Llenar todos los campos");
+ } 
+	//return true;
+}
+
+</script>
+
+</head>
+<body>
+
+<form method="post" action="">
+
+Usuario : <input type="text" id="usuario" name="usuario"> <br>
+<br>
+Pass : <input type="password" id="pass" name="pass"> <br>
+<br>
+<input type=submit name="aceptar" value="Aceptar" id="aceptar" onclick="aceptarLog(this.form)">
+
+<input type=button value="Cerrar" onclick="cerrarse()">
+
+</form>
+
+<!--input type="button" onClick="window.opener.document.getElementById('login').style.visibility='hidden';" value="Invisible"-->
+
+</body>
+</html>
