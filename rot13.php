@@ -1,7 +1,7 @@
 <?php
 
 function aTexto($cadena) {
-	
+	 
 $partes = explode(" ", $cadena);
 
 	foreach ($partes as $valor){
