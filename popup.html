@@ -1,0 +1,20 @@
+<html>
+<head>
+
+<script type="text/javascript" >
+function abrirVentana(){
+	ventana_secundaria = window.open("login.html","miventana","width=300,height=200,menubar=no")
+}
+</script>
+
+</head>
+<body>
+<!--a href="/login.html" target="_blank" onClick="window.open(this.href, this.target, 'width=300,height=400'); return false;">Log In</a-->
+
+<?php
+	echo "hola";
+?>
+<button onclick="abrirVentana();" id="login" name="login"> Log In </button>
+
+</body>
+</html>
