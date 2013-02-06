@@ -1,5 +1,5 @@
 # Esto es un comentario $var1
-   # Esto es un comentario $var2
+   #  Esto es un comentario $var2
 Nueva linea $count_1 $$$$ con valor
 $var1 texto en medio $Var_2
 $var1 $Var_2 $v$n
